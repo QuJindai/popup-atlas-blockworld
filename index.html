@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e9d7b4" />
+    <meta name="description" content="在一本会折叠生长的纸艺方块世界里漫步。" />
+    <title>纸上方块大陆 · Pop-up Atlas</title>
+    <script type="module" crossorigin src="./assets/index-ZpzhXPMM.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-76iBTRyM.css">
+  </head>
+  <body>
+    <main id="game" aria-label="纸上方块大陆游戏">
+      <canvas id="world" aria-label="可交互的三维纸艺方块世界"></canvas>
+      <div class="grain" aria-hidden="true"></div>
+      <div class="vignette" aria-hidden="true"></div>
+
+      <header class="masthead">
+        <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="brand-copy">
+          <span class="eyebrow">POP-UP ATLAS <i>·</i> FIELD NOTES 01</span>
+          <h1>纸上方块大陆</h1>
+        </div>
+        <div class="chapter-pill"><span class="live-dot"></span> 第 01 章 <b>·</b> 苔原边境</div>
+      </header>
+
+      <section class="intro-card" id="intro-card" aria-label="游戏介绍">
+        <div class="card-topline"><span>一场掌心里的远行</span><span class="edition">PAPER WORLD / 01</span></div>
+        <h2>世界，正在<br /><em>折叠展开。</em></h2>
+        <p>向前走一步，纸页就长出一片方块大陆。<br />慢一点，听见它轻轻翻身。</p>
+        <button id="start-button" class="start-button" type="button">
+          <span>开始漫游</span><span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+        <div class="card-foot"><span>W A S D 移动</span><span>或点击目的地</span></div>
+      </section>
+
+      <aside class="world-note" id="world-note">
+        <span class="note-pin"></span>
+        <span class="note-label">FIELD NOTE 001</span>
+        <strong>苔原边境</strong>
+        <span class="note-caption">纸做的山，也会有回声。</span>
+      </aside>
+
+      <div class="hud-top-right" aria-hidden="true">
+        <span class="hud-sun"><i></i></span>
+        <span>纸面晴朗</span>
+        <span class="hud-separator"></span>
+        <span>风速 02</span>
+      </div>
+
+      <footer class="controls" id="controls">
+        <div class="controls-left">
+          <div class="key-cluster" aria-hidden="true">
+            <kbd>W</kbd><div><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></div>
+          </div>
+          <span class="controls-copy"><b>漫步</b><small>探索纸页边界</small></span>
+        </div>
+        <div class="controls-center"><span class="sound-icon" aria-hidden="true">♪</span><span>耳机里有纸张翻页声</span></div>
+        <div class="controls-right"><span class="fold-icon" aria-hidden="true">✳</span><span><b id="steps">00</b><small>步 · 已展开</small></span></div>
+      </footer>
+
+      <div class="corner-caption">A SMALL WORLD, MADE OF PAPER</div>
+      <div class="toast" id="toast" aria-live="polite"></div>
+    </main>
+  </body>
+</html>
